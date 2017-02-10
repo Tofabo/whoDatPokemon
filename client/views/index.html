@@ -12,7 +12,6 @@
     </head>
     <script>
         $(document).ready(function () {
-
             var id = Math.floor((Math.random() * 151) + 1);
             var id2 = Math.floor((Math.random() * 151) + 1);
             $('#pokeBin').html(
@@ -30,16 +29,19 @@
             <div id="pokeBin"></div>
         </div>
 
-        <form action="/pokemon" method="POST">
+        <form>
             <label>Your name: <input type="text" name="user_name" value="your name..."></label>
             <br>
             <label>Who's that Pokémon?!? <input type="text" name="pokemon_name" value="your Pokémon's name..."></label>
             <br>
-            <input type="hidden" name="id" value="${id}">
-            <input type="hidden" name="id2" value="${id2}">
             <input type="submit">
         </form>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
     </body>
 
