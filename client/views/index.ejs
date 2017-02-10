@@ -1,0 +1,34 @@
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div id="wrapper">
+        <div id="container">
+            <div id="pokeBin">
+                <img src="http://images.alexonsager.net/pokemon/fused/<%=id%>/<%=id%>.<%=id2%>.png">
+            </div>
+       
+
+        <form action="/pokemon" method="POST">
+            <label class="left">Your name: </label><input type="text" name="user_name" placeholder="your name..." class="right">
+            <br>
+            <label class="left">Who's that Pokémon?!? </label><input type="text" name="pokemon_name" placeholder="your Pokémon's name..." class="right">
+            <br>
+            <input type="hidden" name="id" value="<%=id%>">
+            <input type="hidden" name="id2" value="<%=id2%>">
+            <input type="submit" id="button">
+        </form>
+        </div>
+      </div>
+    </body>
+    </html>
+</body>
